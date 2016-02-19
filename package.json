@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/zaklinaczekodu/zkflow-task-eslint",
   "devDependencies": {
-    "gulp": "3.9.0",
+    "gulp": "3.9.1",
     "gulp-zkflow-nodemodule": "0.1.1"
   },
   "peerDependencies": {
