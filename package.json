@@ -1,0 +1,36 @@
+{
+  "name": "zkflow-task-eslint",
+  "version": "0.0.0",
+  "description": "Karma task in zkflow format",
+  "main": "src/eslintTask.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zaklinaczekodu/zkflow-task-eslint.git"
+  },
+  "keywords": [
+    "gulp",
+    "zkflow",
+    "task",
+    "eslint"
+  ],
+  "author": "Piotr Baranowski <piotr.baranowski@zaklinaczekodu.com> (https://github.com/zaklinaczekodu)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zaklinaczekodu/zkflow-task-eslint/issues"
+  },
+  "homepage": "https://github.com/zaklinaczekodu/zkflow-task-eslint",
+  "devDependencies": {
+    "gulp": "3.9.0",
+    "gulp-zkflow-nodemodule": "0.1.1"
+  },
+  "peerDependencies": {
+    "gulp": "3.*"
+  },
+  "dependencies": {
+    "gulp-eslint": "2.0.0",
+    "gulp-if": "2.0.0",
+    "gulp-zkflow-utils": "0.5.0",
+    "lodash.defaults": "4.0.1",
+    "zkflow-watcher": "0.1.0"
+  }
+}
