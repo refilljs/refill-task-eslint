@@ -1,7 +1,7 @@
 {
   "name": "zkflow-task-eslint",
   "version": "0.1.0",
-  "description": "Karma task in zkflow format",
+  "description": "Eslint task in ZKflow format",
   "main": "src/eslintTask.js",
   "repository": {
     "type": "git",
