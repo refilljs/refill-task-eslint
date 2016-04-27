@@ -19,18 +19,23 @@
     "url": "https://github.com/zaklinaczekodu/zkflow-task-eslint/issues"
   },
   "homepage": "https://github.com/zaklinaczekodu/zkflow-task-eslint",
+  "engines": {
+    "node": ">=4.2",
+    "npm": ">=3.3.3"
+  },
   "devDependencies": {
-    "gulp": "3.9.1",
-    "gulp-zkflow-nodemodule": "0.1.1"
+    "gulp": "3.9.1"
   },
   "peerDependencies": {
-    "gulp": "3.*"
+    "gulp": "^3"
   },
   "dependencies": {
     "gulp-eslint": "2.0.0",
     "gulp-if": "2.0.0",
     "gulp-zkflow-utils": "0.5.0",
     "lodash.defaults": "4.0.1",
+    "zkflow-next-handler": "1.0.0",
+    "zkflow-node": "1.0.0",
     "zkflow-watcher": "0.1.0"
   }
 }

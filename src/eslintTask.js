@@ -5,27 +5,29 @@ var zkutils = require('gulp-zkflow-utils');
 var zkflowWatcher = require('zkflow-watcher');
 var gulpIf = require('gulp-if');
 var defaults = require('lodash.defaults');
+var ZkflowNextHandler = require('zkflow-next-handler');
 
 function getEslintTask(options, gulp, mode) {
 
   function eslintTask(next) {
 
     var logger = zkutils.logger('lint-js');
-    var nextHandler;
+    var zkflowNextHandler;
     var eslintOptions = defaults({}, options.eslint, {
       fix: mode.eslintFix
     });
 
-    nextHandler = new zkutils.NextHandler({
+    zkflowNextHandler = new ZkflowNextHandler({
       next: next,
       watch: mode.watch,
-      logger: logger
+      logger: logger,
+      quickFinish: true
     });
 
     zkflowWatcher.watch(runEslint, mode.watch && !mode.eslintFix, options.globs, logger);
 
     function runEslint() {
-      return nextHandler.handle(
+      return zkflowNextHandler.handle(
         zkutils.promisify(
           gulp
           .src(options.globs, options.globsOptions)

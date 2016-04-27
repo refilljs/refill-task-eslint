@@ -9,13 +9,13 @@ addons:
 language: node_js
 
 node_js:
+  - 6
   - 5
   - 4
-  - 0.12
-  - 0.10
 
 os:
   - linux
+  - osx
 
 env:
   global:
@@ -33,6 +33,6 @@ deploy:
   email: piotr.baranowski@zaklinaczekodu.com
   api_key: $NPM_API_KEY
   on:
-    node: 5
+    node: 6
     tags: true
     repo: zaklinaczekodu/zkflow-task-eslint
