@@ -9,11 +9,12 @@ Shields
 
 [![npm](https://img.shields.io/npm/v/zkflow-task-eslint.svg?style=flat-square)](https://www.npmjs.com/package/zkflow-task-eslint)
 [![npm](https://img.shields.io/npm/l/zkflow-task-eslint.svg?style=flat-square)](https://www.npmjs.com/package/zkflow-task-eslint)
-[![npm](https://img.shields.io/npm/dm/zkflow-task-eslint.svg?style=flat-square)](https://www.npmjs.com/package/zkflow-task-eslint)<br>
-[![Travis](https://img.shields.io/travis/zaklinaczekodu/zkflow-task-eslint/master.svg?style=flat-square)](https://travis-ci.org/zaklinaczekodu/zkflow-task-eslint)
-[![Code Climate](https://img.shields.io/codeclimate/github/zaklinaczekodu/zkflow-task-eslint.svg?style=flat-square)](https://codeclimate.com/github/zaklinaczekodu/zkflow-task-eslint)<br>
-[![David](https://img.shields.io/david/zaklinaczekodu/zkflow-task-eslint.svg?style=flat-square)](https://david-dm.org/zaklinaczekodu/zkflow-task-eslint)
-[![David](https://img.shields.io/david/dev/zaklinaczekodu/zkflow-task-eslint.svg?style=flat-square)](https://david-dm.org/zaklinaczekodu/zkflow-task-eslint)<br>
+[![npm](https://img.shields.io/npm/dm/zkflow-task-eslint.svg?style=flat-square)](https://www.npmjs.com/package/zkflow-task-eslint)
+[![Travis](https://img.shields.io/travis/zaklinaczekodu/zkflow-task-eslint/master.svg?style=flat-square)](https://travis-ci.org/zaklinaczekodu/zkflow-task-eslint)<br>
+[![bitHound Overall Score](https://www.bithound.io/github/zaklinaczekodu/zkflow-task-eslint/badges/score.svg)](https://www.bithound.io/github/zaklinaczekodu/zkflow-task-eslint)
+[![bitHound Dependencies](https://www.bithound.io/github/zaklinaczekodu/zkflow-task-eslint/badges/dependencies.svg)](https://www.bithound.io/github/zaklinaczekodu/zkflow-task-eslint/master/dependencies/npm)
+[![bitHound Dev Dependencies](https://www.bithound.io/github/zaklinaczekodu/zkflow-task-eslint/badges/devDependencies.svg)](https://www.bithound.io/github/zaklinaczekodu/zkflow-task-eslint/master/dependencies/npm)
+[![bitHound Code](https://www.bithound.io/github/zaklinaczekodu/zkflow-task-eslint/badges/code.svg)](https://www.bithound.io/github/zaklinaczekodu/zkflow-task-eslint)<br>
 [![GitHub forks](https://img.shields.io/github/forks/zaklinaczekodu/zkflow-task-eslint.svg?style=flat-square)](https://github.com/zaklinaczekodu/zkflow-task-eslint)
 [![GitHub stars](https://img.shields.io/github/stars/zaklinaczekodu/zkflow-task-eslint.svg?style=flat-square)](https://github.com/zaklinaczekodu/zkflow-task-eslint)
 [![GitHub followers](https://img.shields.io/github/followers/zaklinaczekodu.svg?style=flat-square)](https://github.com/zaklinaczekodu/zkflow-task-eslint)
