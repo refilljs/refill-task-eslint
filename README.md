@@ -1,29 +1,29 @@
-# ZKflow task eslint
+# Refill task eslint
 
-Eslint task in [ZKflow](https://github.com/zaklinaczekodu/zkflow) format
+Eslint task in [Refill](https://github.com/refilljs/refill) format
 
 [<img alt="Made by Zaklinacze Kodu" src="http://zaklinaczekodu.com/_assets/madeBy.svg" width="200">](http://zaklinaczekodu.com)
 
 Shields
 -------
 
-[![npm](https://img.shields.io/npm/v/zkflow-task-eslint.svg?style=flat-square)](https://www.npmjs.com/package/zkflow-task-eslint)
-[![npm](https://img.shields.io/npm/l/zkflow-task-eslint.svg?style=flat-square)](https://www.npmjs.com/package/zkflow-task-eslint)
-[![npm](https://img.shields.io/npm/dm/zkflow-task-eslint.svg?style=flat-square)](https://www.npmjs.com/package/zkflow-task-eslint)
-[![Travis](https://img.shields.io/travis/zaklinaczekodu/zkflow-task-eslint/master.svg?style=flat-square)](https://travis-ci.org/zaklinaczekodu/zkflow-task-eslint)<br>
-[![bitHound Overall Score](https://www.bithound.io/github/zaklinaczekodu/zkflow-task-eslint/badges/score.svg)](https://www.bithound.io/github/zaklinaczekodu/zkflow-task-eslint)
-[![bitHound Dependencies](https://www.bithound.io/github/zaklinaczekodu/zkflow-task-eslint/badges/dependencies.svg)](https://www.bithound.io/github/zaklinaczekodu/zkflow-task-eslint/master/dependencies/npm)
-[![bitHound Dev Dependencies](https://www.bithound.io/github/zaklinaczekodu/zkflow-task-eslint/badges/devDependencies.svg)](https://www.bithound.io/github/zaklinaczekodu/zkflow-task-eslint/master/dependencies/npm)
-[![bitHound Code](https://www.bithound.io/github/zaklinaczekodu/zkflow-task-eslint/badges/code.svg)](https://www.bithound.io/github/zaklinaczekodu/zkflow-task-eslint)<br>
-[![GitHub forks](https://img.shields.io/github/forks/zaklinaczekodu/zkflow-task-eslint.svg?style=flat-square)](https://github.com/zaklinaczekodu/zkflow-task-eslint)
-[![GitHub stars](https://img.shields.io/github/stars/zaklinaczekodu/zkflow-task-eslint.svg?style=flat-square)](https://github.com/zaklinaczekodu/zkflow-task-eslint)
-[![GitHub followers](https://img.shields.io/github/followers/zaklinaczekodu.svg?style=flat-square)](https://github.com/zaklinaczekodu/zkflow-task-eslint)
+[![npm](https://img.shields.io/npm/v/refill-task-eslint.svg?style=flat-square)](https://www.npmjs.com/package/refill-task-eslint)
+[![npm](https://img.shields.io/npm/l/refill-task-eslint.svg?style=flat-square)](https://www.npmjs.com/package/refill-task-eslint)
+[![npm](https://img.shields.io/npm/dm/refill-task-eslint.svg?style=flat-square)](https://www.npmjs.com/package/refill-task-eslint)
+[![Travis](https://img.shields.io/travis/refilljs/refill-task-eslint/master.svg?style=flat-square)](https://travis-ci.org/refilljs/refill-task-eslint)<br>
+[![bitHound Overall Score](https://www.bithound.io/github/refilljs/refill-task-eslint/badges/score.svg)](https://www.bithound.io/github/refilljs/refill-task-eslint)
+[![bitHound Dependencies](https://www.bithound.io/github/refilljs/refill-task-eslint/badges/dependencies.svg)](https://www.bithound.io/github/refilljs/refill-task-eslint/master/dependencies/npm)
+[![bitHound Dev Dependencies](https://www.bithound.io/github/refilljs/refill-task-eslint/badges/devDependencies.svg)](https://www.bithound.io/github/refilljs/refill-task-eslint/master/dependencies/npm)
+[![bitHound Code](https://www.bithound.io/github/refilljs/refill-task-eslint/badges/code.svg)](https://www.bithound.io/github/refilljs/refill-task-eslint)<br>
+[![GitHub forks](https://img.shields.io/github/forks/refilljs/refill-task-eslint.svg?style=flat-square)](https://github.com/refilljs/refill-task-eslint)
+[![GitHub stars](https://img.shields.io/github/stars/refilljs/refill-task-eslint.svg?style=flat-square)](https://github.com/refilljs/refill-task-eslint)
+[![GitHub followers](https://img.shields.io/github/followers/refilljs.svg?style=flat-square)](https://github.com/refilljs/refill-task-eslint)
 
 Installation
 ------------
 
 ```bash
-npm install --save zkflow-task-eslint zkflow gulp
+npm install --save refill-task-eslint refill gulp
 ```
 
 Usage
@@ -32,9 +32,9 @@ Usage
 gulpfile.js
 
 ```javaScript
-require('zkflow')({
+require('refill')({
   'lint-js': {
-    task: require('zkflow-task-eslint')
+    task: require('refill-task-eslint')
   }
 }, require('gulp'), mode)
 ```
@@ -70,17 +70,6 @@ Default options
   },
   dest: '',
   eslint: {
-    rules: {
-      'indent': [2, 2],
-      'quotes': [2, 'single'],
-      'linebreak-style': [2, 'unix'],
-      'semi': [2, 'always']
-    },
-    env: {
-      'commonjs': true,
-      'browser': true,
-      'jasmine': true
-    },
     extends: 'eslint:recommended'
   }
 }
@@ -88,7 +77,5 @@ Default options
 
 Sponsors
 --------
-
-[<img alt="Street Team" src="http://zaklinaczekodu.com/_assets/streetteam.svg" width="200">](http://getstreetteam.com)
 
 [<img alt="Zaklinacze Kodu" src="http://zaklinaczekodu.com/_assets/logo.svg" width="200">](http://zaklinaczekodu.com)
