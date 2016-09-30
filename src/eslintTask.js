@@ -6,12 +6,13 @@ var zkflowWatcher = require('zkflow-watcher');
 var gulpIf = require('gulp-if');
 var defaults = require('lodash.defaults');
 var ZkflowNextHandler = require('zkflow-next-handler');
+var refillLogger = require('refill-logger');
 
 function getEslintTask(options, gulp, mode) {
 
   function eslintTask(next) {
 
-    var logger = zkutils.logger('lint-js');
+    var logger = refillLogger('lint-js');
     var zkflowNextHandler;
     var eslintOptions = defaults({}, options.eslint, {
       fix: mode.eslintFix
