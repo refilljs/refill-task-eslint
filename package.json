@@ -32,9 +32,9 @@
   "dependencies": {
     "gulp-eslint": "3.0.1",
     "gulp-if": "2.0.1",
-    "gulp-zkflow-utils": "0.5.0",
     "lodash.defaults": "4.2.0",
-    "refill-logger": "1.0.0",
+    "refill-logger": "1.0.2",
+    "refill-promisify-stream": "1.0.0",
     "zkflow-next-handler": "1.0.0",
     "zkflow-node": "1.0.0",
     "zkflow-watcher": "0.1.0"

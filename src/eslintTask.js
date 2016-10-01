@@ -1,7 +1,7 @@
 'use strict';
 
 var eslint = require('gulp-eslint');
-var zkutils = require('gulp-zkflow-utils');
+var refillPromisifyStream = require('refill-promisify-stream');
 var zkflowWatcher = require('zkflow-watcher');
 var gulpIf = require('gulp-if');
 var defaults = require('lodash.defaults');
@@ -29,7 +29,7 @@ function getEslintTask(options, gulp, mode) {
 
     function runEslint() {
       return zkflowNextHandler.handle(
-        zkutils.promisify(
+        refillPromisifyStream(
           gulp
           .src(options.globs, options.globsOptions)
           .pipe(eslint(eslintOptions))
