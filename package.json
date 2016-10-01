@@ -35,7 +35,7 @@
     "lodash.defaults": "4.2.0",
     "refill-logger": "1.0.2",
     "refill-promisify-stream": "1.0.0",
-    "zkflow-next-handler": "1.0.0",
+    "refill-next-handler": "1.1.0",
     "zkflow-node": "1.0.0",
     "zkflow-watcher": "0.1.0"
   }

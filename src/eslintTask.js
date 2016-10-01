@@ -5,7 +5,7 @@ var refillPromisifyStream = require('refill-promisify-stream');
 var zkflowWatcher = require('zkflow-watcher');
 var gulpIf = require('gulp-if');
 var defaults = require('lodash.defaults');
-var ZkflowNextHandler = require('zkflow-next-handler');
+var RefillNextHandler = require('refill-next-handler');
 var refillLogger = require('refill-logger');
 
 function getEslintTask(options, gulp, mode) {
@@ -13,12 +13,12 @@ function getEslintTask(options, gulp, mode) {
   function eslintTask(next) {
 
     var logger = refillLogger('lint-js');
-    var zkflowNextHandler;
+    var refillNextHandler;
     var eslintOptions = defaults({}, options.eslint, {
       fix: mode.eslintFix
     });
 
-    zkflowNextHandler = new ZkflowNextHandler({
+    refillNextHandler = new RefillNextHandler({
       next: next,
       watch: mode.watch,
       logger: logger,
@@ -28,7 +28,7 @@ function getEslintTask(options, gulp, mode) {
     zkflowWatcher.watch(runEslint, mode.watch && !mode.eslintFix, options.globs, logger);
 
     function runEslint() {
-      return zkflowNextHandler.handle(
+      return refillNextHandler.handle(
         refillPromisifyStream(
           gulp
           .src(options.globs, options.globsOptions)
