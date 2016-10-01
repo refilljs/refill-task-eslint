@@ -24,7 +24,8 @@
     "npm": ">=3.3.3"
   },
   "devDependencies": {
-    "gulp": "3.9.1"
+    "gulp": "3.9.1",
+    "zkflow-node": "1.0.0"
   },
   "peerDependencies": {
     "gulp": "^3"
@@ -34,9 +35,8 @@
     "gulp-if": "2.0.1",
     "lodash.defaults": "4.2.0",
     "refill-logger": "1.0.2",
-    "refill-promisify-stream": "1.0.0",
     "refill-next-handler": "1.1.0",
-    "zkflow-node": "1.0.0",
-    "zkflow-watcher": "0.1.0"
+    "refill-promisify-stream": "1.0.0",
+    "refill-watcher": "1.0.0"
   }
 }
