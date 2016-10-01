@@ -28,7 +28,8 @@
     "zkflow-node": "1.0.0"
   },
   "peerDependencies": {
-    "gulp": "^3"
+    "gulp": "^3",
+    "refill": "^1"
   },
   "dependencies": {
     "gulp-eslint": "3.0.1",
