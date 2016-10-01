@@ -1,41 +1,42 @@
 {
-  "name": "zkflow-task-eslint",
+  "name": "refill-task-eslint",
   "version": "1.0.0",
-  "description": "Eslint task in ZKflow format",
+  "description": "Eslint task in Refill format",
   "main": "src/eslintTask.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zaklinaczekodu/zkflow-task-eslint.git"
+    "url": "https://github.com/refilljs/refill-task-eslint.git"
   },
   "keywords": [
     "gulp",
-    "zkflow",
+    "refill",
     "task",
     "eslint"
   ],
   "author": "Piotr Baranowski <piotr.baranowski@zaklinaczekodu.com> (https://github.com/zaklinaczekodu)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zaklinaczekodu/zkflow-task-eslint/issues"
+    "url": "https://github.com/refilljs/refill-task-eslint/issues"
   },
-  "homepage": "https://github.com/zaklinaczekodu/zkflow-task-eslint",
+  "homepage": "https://github.com/refilljs/refill-task-eslint",
   "engines": {
     "node": ">=4.2",
     "npm": ">=3.3.3"
   },
   "devDependencies": {
-    "gulp": "3.9.1"
+    "gulp": "3.9.1",
+    "zkflow-node": "1.0.0"
   },
   "peerDependencies": {
     "gulp": "^3"
   },
   "dependencies": {
-    "gulp-eslint": "2.0.0",
-    "gulp-if": "2.0.0",
-    "gulp-zkflow-utils": "0.5.0",
-    "lodash.defaults": "4.0.1",
-    "zkflow-next-handler": "1.0.0",
-    "zkflow-node": "1.0.0",
-    "zkflow-watcher": "0.1.0"
+    "gulp-eslint": "3.0.1",
+    "gulp-if": "2.0.1",
+    "lodash.defaults": "4.2.0",
+    "refill-logger": "1.0.2",
+    "refill-next-handler": "1.1.0",
+    "refill-promisify-stream": "1.0.0",
+    "refill-watcher": "1.0.0"
   }
 }

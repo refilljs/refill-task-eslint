@@ -1,34 +1,35 @@
 'use strict';
 
 var eslint = require('gulp-eslint');
-var zkutils = require('gulp-zkflow-utils');
-var zkflowWatcher = require('zkflow-watcher');
+var refillPromisifyStream = require('refill-promisify-stream');
+var refillWatcher = require('refill-watcher');
 var gulpIf = require('gulp-if');
 var defaults = require('lodash.defaults');
-var ZkflowNextHandler = require('zkflow-next-handler');
+var RefillNextHandler = require('refill-next-handler');
+var refillLogger = require('refill-logger');
 
 function getEslintTask(options, gulp, mode) {
 
   function eslintTask(next) {
 
-    var logger = zkutils.logger('lint-js');
-    var zkflowNextHandler;
+    var logger = refillLogger('lint-js');
+    var refillNextHandler;
     var eslintOptions = defaults({}, options.eslint, {
       fix: mode.eslintFix
     });
 
-    zkflowNextHandler = new ZkflowNextHandler({
+    refillNextHandler = new RefillNextHandler({
       next: next,
       watch: mode.watch,
       logger: logger,
       quickFinish: true
     });
 
-    zkflowWatcher.watch(runEslint, mode.watch && !mode.eslintFix, options.globs, logger);
+    refillWatcher.watch(runEslint, mode.watch && !mode.eslintFix, options.globs, logger);
 
     function runEslint() {
-      return zkflowNextHandler.handle(
-        zkutils.promisify(
+      return refillNextHandler.handle(
+        refillPromisifyStream(
           gulp
           .src(options.globs, options.globsOptions)
           .pipe(eslint(eslintOptions))
@@ -60,17 +61,6 @@ module.exports = {
     },
     dest: '',
     eslint: {
-      rules: {
-        'indent': [2, 2],
-        'quotes': [2, 'single'],
-        'linebreak-style': [2, 'unix'],
-        'semi': [2, 'always']
-      },
-      env: {
-        'commonjs': true,
-        'browser': true,
-        'jasmine': true
-      },
       extends: 'eslint:recommended'
     }
   }
