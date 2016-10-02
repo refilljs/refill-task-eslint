@@ -75,6 +75,11 @@ Default options
 }
 ```
 
+Changelog
+---------
+
+[Changelog at github](https://github.com/refilljs/refill-task-eslint/releases)
+
 Sponsors
 --------
 
