@@ -1,5 +1,6 @@
 'use strict';
 
+var path = require('path');
 var eslint = require('gulp-eslint');
 var refillPromisifyStream = require('refill-promisify-stream');
 var refillWatcher = require('refill-watcher');
@@ -61,7 +62,7 @@ module.exports = {
     },
     dest: '',
     eslint: {
-      extends: 'eslint:recommended'
+      configFile: path.join(__dirname, '.eslintrc.dist.json')
     }
   }
 };

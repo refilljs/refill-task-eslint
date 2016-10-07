@@ -70,7 +70,7 @@ Default options
   },
   dest: '',
   eslint: {
-    extends: 'eslint:recommended'
+    configFile: path.join(__dirname, '.eslintrc.dist.json')
   }
 }
 ```

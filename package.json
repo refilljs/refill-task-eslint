@@ -24,7 +24,7 @@
     "npm": ">=3.3.3"
   },
   "devDependencies": {
-    "gulp": "3.9.1",
+    "gulp": "^3.9.1",
     "refill-node": "^2.0.0"
   },
   "peerDependencies": {
@@ -32,9 +32,9 @@
     "refill": "^1"
   },
   "dependencies": {
-    "gulp-eslint": "3.0.1",
-    "gulp-if": "2.0.1",
-    "lodash.defaults": "4.2.0",
+    "gulp-eslint": "^3.0.1",
+    "gulp-if": "^2.0.1",
+    "lodash.defaults": "^4.2.0",
     "refill-logger": "^1.0.3",
     "refill-next-handler": "^1.1.1",
     "refill-promisify-stream": "^1.0.1",
